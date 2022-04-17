@@ -25,7 +25,7 @@ export default function Textform(props) {
       <div className="mb-3">
 
       <h1>Your text summary</h1>
-      <h6>{text.trim().split(/\s+/).length} words and {text.length} characters</h6>
+      <h6>{text.length>0?text.trim().split(/\s+/).length:0} words and {text.length} characters</h6>
       <h6>{text.trim().split(/\s+/).length * 0.008} Minutes to read on average</h6>
 
       </div>
